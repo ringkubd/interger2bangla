@@ -1,5 +1,5 @@
 # Interger2bangla
-===================
+
 Integer number to bangla number and date to bangla date
 
 Initial this class or you may use it as trait . and simple just call ***number()*** or ***monthtobangla*** method with integer value
