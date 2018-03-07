@@ -11,48 +11,32 @@ $bangla = new Numbertobangla();
 $bangla_integer = $bangla->number(9856565656);
 echo $bangla_integer;
 ```
-### Using as Tarit
+### Using
 
-Change ***Class Numbertobangla*** to ***Trait Numbertobangla***
 
 ```PHP
-<?php 
-use Numbertobangla\Numbertobangla; //or include Numbertobangla file
-class Banglanuber{
-  use Numbertobangla;
-  
-  public function index()
-  {
-    return $this->number(9856565656);
-  }
+<?php
+
+/**
+ * @Author: anwar
+ * @Date:   2017-11-15 14:11:33
+ * @Last Modified by:   anwar
+ * @Last Modified time: 2017-11-22 11:18:07
+ */
+include('Numbertobangla.php');
+class Name
+{
+    public function construct()
+    {
+        $abc =  new Numbertobangla();
+        $aa = $abc->monthtobangla('12/Jan/2018');
+		
+        echo $aa;
+    }
 }
 
-```
-## Monthtobangla Method ##
+$abc = new Name();
+$abc->construct();
 
-
-```PHP
-$bangla = new Numbertobangla();
-$bangla_date = $bangla->monthtobangla('07-31-2017'); //its now only support mm-dd-yyy and dd--mm-yyy formate
-echo $bangla_date;
-```
-### Using as Tarit
-
-Change ***Class Numbertobangla*** to ***Trait Numbertobangla***
-
-```PHP
-<?php 
-use Numbertobangla\Numbertobangla; //or include Numbertobangla file
-class Bangla_date{
-  use Numbertobangla;
-  
-  public function index()
-  {
-    return $this->monthtobangla('07-31-2017');
-  }
-}
 
 ```
-
-
-
